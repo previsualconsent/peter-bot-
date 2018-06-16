@@ -2,7 +2,7 @@ module.exports = {
 
 	// Your bot name. Typically, this is your bot's username without the discriminator.
 	// i.e: if your bot's username is MemeBot#0420, then this option would be MemeBot.
-	name: "ScheduleBot",
+	name: "PeterBot",
 
 	// The bot's command prefix. The bot will recognize as command any message that begins with it.
 	// i.e: "-schedulebot foo" will trigger the command "foo",
@@ -11,7 +11,7 @@ module.exports = {
 	// If you replace YOUR_BOT_USER_ID with your bot's user ID, the prefix will be a mention to
 	// your bot. You can get that ID in https://discordapp.com/developers/applications/me/
 	// (click on your application, and find it under "App Details" > "Client ID"
-	prefix:  "<@YOUR_BOT_USER_ID>",
+	prefix:  "401046974935203862",
 
 	// This is a readable version of the prefix. Generally, this is the same as prefix, but if
 	// you set prefix to be in the form of "<@YOUR_BOT_USER_ID>", you'd need to set readable_prefix
@@ -21,7 +21,7 @@ module.exports = {
 	// ScheduleBot's case), the string "<@YOUR_BOT_USER_ID>" doesn't get parsed as a mention.
 	// So in order not to mislead the user, we have a separate option for a readable version of
 	// our prefix.
-	readable_prefix: "@YOUR_BOT_USER_NAME",
+	readable_prefix: "@PeterBot",
 
 	// Admin app settings
 	admin_app: {
@@ -31,7 +31,7 @@ module.exports = {
 
 	// The master channel
 	// The bot will announce the events to this channel. It won't listen to other channels.
-	master_channel: "YOUR_MASTER_CHANNEL",
+	master_channel: "401056187484995585",
 
 	// Events are considered "happening" for a margin of time, where users can see that the event
 	// is happening right now. During that time, the event is not considered expired yet.+
@@ -43,7 +43,7 @@ module.exports = {
 	update_interval: 60000, // In milliseconds
 
 	// List of accepted timezones: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-	default_timezone: "Europe/Madrid",
+	default_timezone: "US/Central",
 
 	// The time format that will be used for the create command. The bot will read a date string
 	// and will attempt to interpret it as the following format. If the passed time doesn't
@@ -83,11 +83,11 @@ module.exports = {
 
 		// The command name. If you changed this to "qh", the command would be executed as
 		// @ScheduleBot qh
-		command_name: "quick-inhouse",
+		command_name: "quick-match",
 
 		// The created event's name, which is then used as a lobby name. (So you could customize
 		// this with your guild's name, for instance)
-		event_name: "Inhouse"
+		event_name: "Misty Mountains Inhouse"
 	},
 
 	db: {
@@ -99,10 +99,10 @@ module.exports = {
 
 	steam: {
 		// The name that the Steam bots will take. It will be appended with "#id" as in "#1".
-		name: "ScheduleBot",
+		name: "PeterBot",
 
 		// The first bot's profile URL. It's needed to redirect users to it.
-		profile_url: "http://steamcommunity.com/profiles/YOUR_BOT_ID/"
+		profile_url: "http://steamcommunity.com/profiles/76561198841607067/"
 	},
 
 	dota: {
@@ -110,7 +110,7 @@ module.exports = {
 		// --server flag to the add-inhouse command.
 		// Go to that command's file (Or type -schedulebot add-inhouse --help)
 		// to see possible values.
-		default_server: "Luxembourg",
+		default_server: "USEast",
 
 		// If false, lobbies will be started automatically when ten people join it
 		// (spectators, casters and unassigned players not counted).
@@ -149,7 +149,7 @@ module.exports = {
 		//
 		// CAREFUL! This will change the name of the command "add-inhouse"
 		// to "add-whatever_you_write"
-		game_generic_name: "inhouse"
+		game_generic_name: "match"
 	}
 };
 
